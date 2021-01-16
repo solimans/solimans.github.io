@@ -168,7 +168,7 @@ body, .roam-body-main {
 }
 
 #roam-sidebar-logo:hover div span {
-  color: var(--links-hover) !important;
+  color: var(--roam-sidebar-logo-hover) !important;
   transition: color .3s ease;
 }
 
