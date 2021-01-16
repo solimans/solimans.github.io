@@ -261,18 +261,18 @@ a {
 }
 
 /* Internal Roam Links [[Roam]] & #Roam & #[[Roam]] */
-.rm-page-ref-tag, .rm-page-ref-link-color, .rm-ref-page-view-title a, .bp3-text-overflow-ellipsis a, .rm-pages-title-text strong, .rm-page-ref {
+.rm-page-ref--tag, .rm-page-ref-link-color, .rm-ref-page-view-title a, .bp3-text-overflow-ellipsis a, .rm-pages-title-text strong, .rm-page-ref {
     color: var(--page-links) !important;
     font-weight: 400;
     transition: color .3s ease;
 }
 
-.rm-page-ref-tag {
+.rm-page-ref--tag {
     color: var(--hashtags) !important;
     font-weight: 400;
 }
 
-.rm-page-ref-tag:hover, .rm-pages-title-text strong:hover, .rm-page-ref:hover {
+.rm-page-ref--tag:hover, .rm-pages-title-text strong:hover, .rm-page-ref:hover {
     color: var(--links-hover) !important;
     text-decoration: none;
     transition: color .3s ease;
