@@ -167,10 +167,10 @@ body, .roam-body-main {
   	transition: color .3s ease;
 }
 
-#roam-sidebar-logo:hover div span {
+/*#roam-sidebar-logo:hover div span {
   color: var(--logo-hover) !important;
   transition: color .3s ease;
-}
+}*/
 
 /*//////////////////////////////*/
 /*                              */
