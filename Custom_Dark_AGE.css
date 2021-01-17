@@ -272,7 +272,7 @@ a {
     font-weight: 400;
 }
 
-.rm-page-ref-tag:hover, .rm-pages-title-text strong:hover, .rm-page-ref:hover {
+.rm-page-ref--tag:hover, .rm-pages-title-text strong:hover, .rm-page-ref:hover {
     color: var(--links-hover) !important;
     text-decoration: none;
     transition: color .3s ease;
@@ -1441,12 +1441,12 @@ a {
     transition: color .3s ease;
 }
 
-.rm-page-ref-tag {
+.rm-page-ref--tag {
     color: var(--hashtags) !important;
     font-weight: 400;
 }
 
-.rm-page-ref-tag:hover, .rm-pages-title-text strong:hover, .rm-page-ref:hover {
+.rm-page-ref--tag:hover, .rm-pages-title-text strong:hover, .rm-page-ref:hover {
     color: var(--links-hover) !important;
     text-decoration: none;
     transition: color .3s ease;
