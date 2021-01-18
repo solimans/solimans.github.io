@@ -6,9 +6,6 @@
     --reduce-padding-right: 568px;        /* DEFAULT 568px;  Increase these two padding values to increase */
     --reduce-padding-left: 1032px;        /* DEFAULT 1032px; the global width of your blocks on the page */
   	/* TEXT COLORS */
-    --block-ref-background-color: #b1ec00;
-    --block-ref-hover-color: #b1ec00;
-    --block-ref-underline: #b1ec00;
     --page-links: #D5A979;              /* [[Page Link]] */
     --attributes-color: #CEA2A1;        /* Attribute:: */
     --external-links: #53A6C8;          /* https://www.google.com */
@@ -31,6 +28,10 @@
     --references: #A3B47D;              /* reference underline color */
     --reference-underline: 0px;			  /* underline beneath reference. 0px = no underline */
     --reference-border: 0px;      		  /* border around reference number indicator. 0px = no border */
+    --block-ref-background-color: #b1ec00;
+    --block-ref-hover-background-color: #b1ec00;
+    --block-ref-hover-color: #b1ec00;
+    --block-ref-underline: #b1ec00;
     --block-reference-text: #A3B47D;    /* block reference color */
     --namespaces: #1CD247;              /* Namespace/color (win: ctrl+c ctrl+L) or (mac: cmd+c cmd+L) */
     --all-pages-mentions: #F79A18;      /* mentions pill on ALl Pages */
@@ -352,25 +353,25 @@ strong {
 
 
 /* block reference */
-.roam-block .rm-block-ref, span[style*="color: red"] {
+.roam-block, span[style*="color: red"] {
     background-color: transparent !important;
     color: var(--block-reference-text) !important;
     transition: color .3s ease, border .3s ease;
     border-bottom: var(--reference-underline) solid var(--block-reference-text);
 }
 
-.rm-block-ref:hover {
+.rm-block-ref {
     background-color: var(--block-ref-background-color) !important;
+    color: var(--block-reference-text) !important;
+    transition: color .3s ease, border .3s ease;
+    border-bottom: var(--reference-underline) solid var(--block-reference-text);
+}
+
+.rm-block-ref:hover {
+    background-color: var(--block-ref-hover-background-color) !important;
     color: var(--block-ref-hover-color) !important;
     transition: color .3s ease, border .3s ease;
     border-bottom: var(--block-ref-underline) solid var(--block-ref-hover-color);
-}
-
-.roam-block .rm-block-ref:hover {
-    background-color: transparent !important;
-    color: var(--links-hover) !important;
-    transition: color .3s ease, border .3s ease;
-    border-bottom: var(--reference-underline) solid var(--links-hover);
 }
 
 /* Namespace text color [[roam/css]] when using CTRL+C CTRL+L || CMD+C CMD+L */
