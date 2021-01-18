@@ -6,9 +6,13 @@
     --reduce-padding-right: 568px;        /* DEFAULT 568px;  Increase these two padding values to increase */
     --reduce-padding-left: 1032px;        /* DEFAULT 1032px; the global width of your blocks on the page */
   	/* TEXT COLORS */
+    --block-ref-background-color: #b1ec00;
+    --block-ref-hover-color: #b1ec00;
+    --block-ref-underline: #b1ec00;
     --page-links: #D5A979;              /* [[Page Link]] */
     --attributes-color: #CEA2A1;        /* Attribute:: */
     --external-links: #53A6C8;          /* https://www.google.com */
+    -external-links-hover: #53A6C8;          /* https://www.google.com */
     --links-hover: #EE8443;             /* hover color of all links */
     --hashtags: #FFFFFF84;              /* #hashtag #[[hash tags]] */
     --body-text: #FFFFFFB2;             /* general body text */
@@ -307,7 +311,7 @@ h4.level1 a:hover, h4.level2 a:hover, h4.level3 a:hover, h4.level4 a:hover {
     transition: color .3s ease;
 }
 
-.rm-page-ref-link-color:hover, a:focus, a:hover {
+.rm-page-ref-link-color:hover {
     color: var(--links-hover) !important;
     text-decoration: none !important;
     transition: color .3s ease;
@@ -355,6 +359,12 @@ strong {
     border-bottom: var(--reference-underline) solid var(--block-reference-text);
 }
 
+.rm-block-ref:hover {
+    background-color: var(--block-ref-background-color) !important;
+    color: var(--block-ref-hover-color) !important;
+    transition: color .3s ease, border .3s ease;
+    border-bottom: var(--block-ref-underline) solid var(--block-ref-hover-color);
+}
 
 .roam-block .rm-block-ref:hover {
     background-color: transparent !important;
