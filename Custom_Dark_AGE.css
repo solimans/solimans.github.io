@@ -301,6 +301,12 @@ h4.level1 a:hover, h4.level2 a:hover, h4.level3 a:hover, h4.level4 a:hover {
     font-weight: 600;
 }
 
+.a:focus, a:hover {
+    color: var(--external-links-hover) !important;
+    text-decoration: underline !important;
+    transition: color .3s ease;
+}
+
 .rm-page-ref-link-color:hover, a:focus, a:hover {
     color: var(--links-hover) !important;
     text-decoration: none !important;
